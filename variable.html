@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary-color: slateblue;
+            --secondary-color: purple;
+            --font-size: 20px;
+        }
+        h1{
+            
+            color: var(--primary-color);
+        }
+        h3{
+            background-color: var(--secondary-color);
+            width: calc(100% - 300px)
+        }
+        .box{ 
+            border: 2px solid var(--secondary-color);
+            width: calc(100% - 300px)
+        }
+        .box p{
+            color: var(--primary-color);
+        }
+        .sidebar{
+            
+            background-color: var(--primary-color);
+            padding: 20px;
+            color: white;
+        }
+        .content{
+            background-color: var(--secondary-color);
+            padding: 20px;
+            color: white;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 220px);
+            /* grid-template-columns: 200px auto; */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Custom Variables</h1>  
+    <h3>I am doing great</h3>
+    <div class="box">
+      
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum corporis, maiores libero quisquam fuga voluptates alias accusantium possimus ex magnam quod soluta suscipit enim iste dolorum sunt. Beatae, accusantium incidunt.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+    </div>
+</body>
+</html>
