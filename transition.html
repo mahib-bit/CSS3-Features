@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #14790a;
+            border: 2px solid #470355;
+            margin: 20px;
+            padding: 10px;
+            transition: width 2s linear 1s, background-color 2s ease-in-out;
+        }
+        .box:hover {
+            width: 300px;
+            background-color: #1bb42f;
+        }
+        .box-3 {
+            width: 150px;
+            height: 150px;
+            background-color: #901313;
+            border: 2px solid #033647;
+            margin: 20px;
+            padding: 10px;
+            transition: transform 1s ease-in-out;
+        }
+        .box-3:hover {
+            background-color: #ff0101;
+            transform: rotate(40deg) scale(1.2) translate(150px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus itaque ipsam consequatur veritatis quo incidunt cum repellendus culpa eum minima,
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus itaque ipsam consequatur veritatis quo incidunt cum repellendus culpa eum minima,
+    </div>
+    <div class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus itaque ipsam consequatur veritatis quo incidunt cum repellendus culpa eum minima,
+    </div>
+    <div class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus itaque ipsam consequatur veritatis quo incidunt cum repellendus culpa eum minima,
+    </div>
+</body>
+</html>

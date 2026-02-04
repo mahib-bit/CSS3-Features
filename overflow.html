@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box-1 {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #2e6eb8;
+            margin: 20px;
+            padding: 10px;
+            overflow: auto; /* Change to 'hidden', 'scroll', or 'visible' to see different behaviors */
+        }
+        .box-2 {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #b82e2e;
+            margin: 20px;
+            padding: 10px;
+            overflow: scroll; 
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .elipsis {
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <p title="Box 1: This box uses overflow: auto;, which adds scrollbars only when necessary" class="elipsis"><strong>Box 1:</strong> This box uses <code>overflow: auto;</code>, which adds scrollbars only when necessary.</p>
+    </header>
+    <div class="box-1">
+        <h3>My Box 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quos laborum cupiditate aliquam doloremque recusandae fugiat enim magnam nemo odio quo animi odit sit voluptate distinctio qui, sint, non, sunt numquam. Quis quidem tempora velit sapiente autem mollitia. Adipisci magni sit vel odit natus error ut eligendi vero laboriosam velit, reiciendis atque perferendis assumenda saepe repellat quam earum veritatis ipsum? Officia libero reiciendis fugit explicabo similique delectus suscipit, dolore recusandae dicta consequatur harum sed voluptatibus eaque nihil excepturi ad, quam quaerat sit fugiat ratione saepe odio tempore. Id molestias iste ullam nisi excepturi incidunt velit repellat provident eum temporibus. Saepe dolorum, quasi similique distinctio enim, quod repellat quisquam molestiae quibusdam aut, voluptates sit. Quidem, in! Voluptatibus dolorum blanditiis assumenda eveniet modi quos labore quae voluptates, temporibus culpa atque distinctio dolores laudantium commodi voluptatem consequatur facilis quam voluptatum natus corporis animi illum perferendis. Incidunt aut similique voluptatum velit reprehenderit, quisquam molestias magni, iusto exercitationem et reiciendis aperiam doloremque nulla eius cupiditate modi suscipit quas culpa eaque soluta, saepe non! Facilis suscipit maxime autem hic, aperiam laudantium assumenda blanditiis, dolorum eum iste ipsum sunt repellendus, sequi repellat quaerat? Laudantium voluptas excepturi magnam quaerat vero iusto odit officiis esse minima, et, enim laborum.</p>
+    </div>
+    <div class="box-2">
+        <h3>My Box 2</h3>
+        <p>Eos beatae cumque recusandae molestias repellendus quisquam, neque velit molestiae nemo quis accusamus atque voluptas praesentium alias nulla vel debitis? Doloribus eveniet exercitationem neque possimus voluptatibus alias ipsam tempore voluptates tempora pariatur. Consequatur voluptatem numquam dolore neque tempore dolores! Veniam dolore doloribus atque voluptate vero odio rem porro temporibus earum? Consectetur modi atque doloribus aut fugit, suscipit saepe autem, culpa debitis rem optio iusto. Soluta expedita recusandae adipisci odio voluptatibus debitis eaque quis dolorem maxime quae iure dicta laborum quam impedit saepe amet, quasi optio accusantium, quidem aperiam nam, nobis facilis magni. Sit dicta culpa qui maxime a ullam maiores doloremque molestias placeat necessitatibus, sunt earum modi eius libero magni. Deleniti eius nulla fuga alias ipsam in enim exercitationem, doloremque dolorum consequatur tenetur cumque eos distinctio sequi non nostrum, aut delectus, saepe optio. Veniam, quasi eos doloremque ut eius corporis vitae. Iusto asperiores perferendis commodi! Amet accusantium, ullam sint laboriosam facere eius fuga ut tempore, ex inventore commodi cum voluptatibus dignissimos molestiae magnam dolores temporibus, consequuntur numquam cupiditate placeat minima architecto delectus eaque? Soluta aliquam dolorum vero ullam temporibus, suscipit optio quas, placeat commodi delectus quasi dolorem, doloremque at accusamus hic repellat praesentium maiores quae labore ipsum nobis autem. Consequatur.</p>
+    </div>
+</body>
+</html>
